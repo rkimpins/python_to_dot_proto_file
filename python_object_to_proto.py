@@ -48,7 +48,7 @@ def add_class_to_proto(obj, proto, tab_level=0):
 	return proto
 
 
-def convert_objs_to_proto(obj_list, syntax="proto3", packageName="temporaryName", tab_level=0):
+def convert_objs_to_proto(obj_list, syntax="proto3", packageName="temporaryName", tab_level=0, filename="POTP.proto"):
 	proto = "\\*This proto file was generated using the Python Object To Proto utility created by (rkimpins)*/"
 	proto += "\n" + "\t" * tab_level +  f"syntax = \"{syntax}\";"
 	proto += "\n\n" + "\t" * tab_level + f"package {packageName};"
@@ -60,7 +60,7 @@ def convert_objs_to_proto(obj_list, syntax="proto3", packageName="temporaryName"
 			proto = add_class_to_proto(obj, proto)
 		proto += "\n"
 
-	write_to_file(proto, "POTP.proto")
+	write_to_file(proto, filename)
 	print(proto)
 	return proto
 
