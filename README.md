@@ -38,5 +38,7 @@ It may be worth looking further into whether enumerations are possible to genera
 # Additional Resources
 
 General guide - developers.google.com/protocol-buffers/ 
+
 Python specific guide - developers.google.com/protocol-buffers/docs/pythontutorial
+
 Proto3 and Types - https://developers.google.com/protocol-buffers/docs/proto3
