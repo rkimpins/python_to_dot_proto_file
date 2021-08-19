@@ -17,6 +17,13 @@ convert_objs_to_proto([instantiatedClass1, instantiatedClass2, dict1, dict2], pa
 
 for an example of a class and dict to use, see [Test_Classes.py]
 
+# Protobuf and Protoc Usage
+If you want to compile the generated proto file (if this doesn't make sense to you work through the guide in additional resources), the command is:
+
+protoc -I=<SRC_DIR> --python_out=<DST_DIR> <SRC_DIR>/<filename>.proto
+
+protoc -I="./" --python_out="./" ./<filename>.proto
+
 # Limitations
 This program has some major limitations and does not encompass the full scope and power of protocol buffers. First off, Python does not have typing and that makes things challenging. This program is limited by what it can guess based on an instantiated instance of a python class or dictionary. There is a lot it cannot guess from an instance, but it provides a solid starting point for users to add modify and expand upon the generated file.
 
