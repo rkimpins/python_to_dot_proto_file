@@ -27,3 +27,9 @@ Here are some things I recommend the user experiment with once they have generat
 
 # Where To Go From Here
 It may be worth looking further into whether enumerations are possible to generate. A cursorary look suggested it wouldn't be possible, but I may be wrong.
+
+# Additional Resources
+
+General guide - developers.google.com/protocol-buffers/ 
+Python specific guide - developers.google.com/protocol-buffers/docs/pythontutorial
+Proto3 and Types - https://developers.google.com/protocol-buffers/docs/proto3
