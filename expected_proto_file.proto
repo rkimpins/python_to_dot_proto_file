@@ -1,0 +1,27 @@
+\*This proto file was generated using the Python Object To Proto utility created by (rkimpins)*/
+syntax = "proto3";
+
+package temporaryName;
+
+message TestClass {
+	string a = 0;
+	int32 b = 1;
+	float c = 2;
+	int32 d = 3;
+	repeated int32 el = 4;
+	message fd = {
+		a int32 = 5
+		b string = 6
+		c float = 7
+		d int32 = 8
+	}
+}
+
+message Dict = {
+	a int32 = 9
+	b string = 10
+	c float = 11
+	d int32 = 12
+	el repeated int32 = 13
+	fd unknown = 14
+}
